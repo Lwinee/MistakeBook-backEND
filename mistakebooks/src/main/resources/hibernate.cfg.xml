@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://10.163.193.214:3306/webapp</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">LiLingHui981001</property>
+    <!-- 配置hibernate的基本信息 -->
+    <property name="show_sql">true</property>
+    <property name="format_sql">true</property>
+    <property name="hbm2ddl.auto">update</property>
+
+    <mapping class="webapp.mistakebooks.model.RedomistakeEntity"/>
+    <mapping resource="domain/RedomistakeEntity.hbm.xml"/>
+    <mapping class="webapp.mistakebooks.model.MistakeEntity"/>
+    <mapping resource="domain/MistakeEntity.hbm.xml"/>
+    <mapping class="webapp.mistakebooks.model.UserEntity"/>
+    <mapping resource="domain/UserEntity.hbm.xml"/>
+    <mapping class="webapp.mistakebooks.model.FirstpageEntity"/>
+    <mapping resource="domain/FirstpageEntity.hbm.xml"/>
+
+
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

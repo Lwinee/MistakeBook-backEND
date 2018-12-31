@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="webapp.mistakebooks.model.FirstpageEntity" table="firstpage" schema="webapp">
+        <id name="mistakeId">
+            <column name="mistakeID" sql-type="int(11)"/>
+        </id>
+        <property name="mistakeTitle">
+            <column name="mistakeTitle" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="mistakeCause">
+            <column name="mistakeCause" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="userId">
+            <column name="userID" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="subject">
+            <column name="subject" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="tag">
+            <column name="tag" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
