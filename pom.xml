@@ -34,7 +34,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</ependency>
+		</dependency>
 
 		<dependency>
 			<groupId>org.mongodb</groupId>
